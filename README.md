@@ -39,7 +39,7 @@ BUILD WINDOWS
 
 1) Download Qt.zip from https://github.com/Artax-Project/Artax/releases/tag/v1.0 and unpack to C:/
 
-2) Download SagaCoin source from https://github.com/Artax-Project/Artax/archive/master.zip 
+2) Download Artax source from https://github.com/Artax-Project/Artax/archive/master.zip 
 
 2.1) Unpack to C:/Artax
 
@@ -51,7 +51,7 @@ BUILD WINDOWS
 
 5) Run msys.bat located in C:\MinGW49-32\msys\1.0
 
-6) cd /C/SagaCoin/src/leveldb
+6) cd /C/Artax/src/leveldb
 
 7) Type "TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a" and hit enter to build leveldb
 
