@@ -1134,7 +1134,7 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
     
     if(nHeight <= PREMINE_BLOCK)
     {
-        nSubsidy = 2333333 * COIN; //  PREMINE 1 BLOCKS, 5%
+        nSubsidy = 5333333 * COIN; //  PREMINE 1 BLOCKS, 5%
     }
     else if(nHeight < FAIR_LAUNCH_BLOCK)
     {
@@ -1142,15 +1142,15 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
     }
 		else if(nHeight < YEAR1_BLOCKS)
     {
-        nSubsidy = 10 * COIN;
+        nSubsidy = 20 * COIN;
     }
 		else if(nHeight < YEAR2_BLOCKS)
     {
-        nSubsidy = (10 / 2) * COIN;
+        nSubsidy = (20 / 2) * COIN;
     }
     else
     {
-        nSubsidy = (10 / 4) * COIN;
+        nSubsidy = (20 / 4) * COIN;
     }
 
 	LogPrint("creation", "GetProofOfWorkReward() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
@@ -1187,7 +1187,7 @@ int64_t GetProofOfStakeReward(int nHeight, int64_t nCoinAge, int64_t nFees)
 }
 
 
-static int64_t nTargetTimespan = 10 * 60;  // 10 mins
+static int64_t nTargetTimespan = 5 * 60;  // 10 mins
 
 //
 // maximum nBits value could possible be required nTime after
@@ -1235,7 +1235,7 @@ const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfSta
     return pindex;
 }
 
-int nTargetSpacing = 120; //120s
+int nTargetSpacing = 65; //65s
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {   

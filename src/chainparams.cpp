@@ -59,39 +59,41 @@ public:
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
-        // CBlock(hash=0000094489de23ce067f849298d6ba294cdfcfee59a20c152ec6b0b5c8626d1d, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=82924263d317ab02c15b8439858d1924dd59a33c0ea1ecbc674939530d18a686, nTime=1515129598, nBits=1e0fffff, nNonce=503167, vtx=1, vchBlockSig=)
-        // Coinbase(hash=82924263d317ab02c15b8439858d1924dd59a33c0ea1ecbc674939530d18a686, nTime=1515129598, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        // CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a2b30352f30312f32303138204152544158204c61756e63682066726f6d20696d706c656d656e746174696f6e)
+        //CBlock(hash=00000bf441989ba2b71f9992c0642228658a3f97e546aba2870ec7ff814a8d8a, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=cecd5c1dcb22404370c79d2c99283964bde791b9e957726b284894656f27a998, nTime=1515288903, nBits=1e0fffff, nNonce=1212410, vtx=1, vchBlockSig=)
+        //Coinbase(hash=cecd5c1dcb22404370c79d2c99283964bde791b9e957726b284894656f27a998, nTime=1515288903, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+        //CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a2b30372f30312f32303138204152544158204c61756e63682066726f6d20696d706c656d656e746174696f6e)
+        //CTxOut(empty)
 
-        // vMerkleTree:  82924263d317ab02c15b8439858d1924dd59a33c0ea1ecbc674939530d18a686
+        //vMerkleTree:  cecd5c1dcb22404370c79d2c99283964bde791b9e957726b284894656f27a998
 
-        //mainnet.genesis.GetHash(): 0000094489de23ce067f849298d6ba294cdfcfee59a20c152ec6b0b5c8626d1d
-        //mainnet.genesis.hashMerkleRoot: 82924263d317ab02c15b8439858d1924dd59a33c0ea1ecbc674939530d18a686
-        //mainnet.genesis.nTime: 1515129598
-        //mainnet.genesis.nNonce: 503167
+        //mainnet.genesis.GetHash(): 00000bf441989ba2b71f9992c0642228658a3f97e546aba2870ec7ff814a8d8a
+        //mainnet.genesis.hashMerkleRoot: cecd5c1dcb22404370c79d2c99283964bde791b9e957726b284894656f27a998
+        //mainnet.genesis.nTime: 1515288903
+        //mainnet.genesis.nNonce: 1212410
 
-        const char* pszTimestamp = "05/01/2018 ARTAX Launch from implementation";
+
+        const char* pszTimestamp = "07/01/2018 ARTAX Launch from implementation";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         std::vector<CTxOut> vout;
         vout.resize(1);
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1515129598, vin, vout, 0);
+        CTransaction txNew(1, 1515288903, vin, vout, 0);
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1515129598;
+        genesis.nTime    = 1515288903;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce   = 503167; 
+        genesis.nNonce   = 1212410; 
 
         hashGenesisBlock = genesis.GetHash(); 
    	//	  printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         // printf("genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(hashGenesisBlock == uint256("0x0000094489de23ce067f849298d6ba294cdfcfee59a20c152ec6b0b5c8626d1d"));
-        assert(genesis.hashMerkleRoot == uint256("0x82924263d317ab02c15b8439858d1924dd59a33c0ea1ecbc674939530d18a686"));
+        assert(hashGenesisBlock == uint256("0x00000bf441989ba2b71f9992c0642228658a3f97e546aba2870ec7ff814a8d8a"));
+        assert(genesis.hashMerkleRoot == uint256("0xcecd5c1dcb22404370c79d2c99283964bde791b9e957726b284894656f27a998"));
 
     
         vFixedSeeds.clear();
@@ -150,8 +152,8 @@ public:
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nBits  = 1513082722;
-        genesis.nNonce = 503167;
+        genesis.nBits  = 1515288903;
+        genesis.nNonce = 1212410;
 		
         hashGenesisBlock = genesis.GetHash();
         //assert(hashGenesisBlock == uint256("0x"));
