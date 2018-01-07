@@ -1,14 +1,32 @@
-# Artax
+   _____ __________________________  ____  ___
+  /  _  \\______   \__    ___/  _  \ \   \/  /
+ /  /_\  \|       _/ |    | /  /_\  \ \     / 
+/    |    \    |   \ |    |/    |    \/     \ 
+\____|____/____|___/ |____|\____|____/___/\__\
+                                     
 
-Artax is a PoW + PoS-based cryptocurrency.
+Artax is a Powerful Node-based PoW + PoS-based cryptocurrency.
 
+## Artax Specifications
 
+| Specification | Value |
+|:-----------|:-----------|
+| Block Spacing | `65 seconds` |
+| Stake Minimum Age | `10 hours` |
+| Stake Reward | `20% PoS / 180% Masternode per annum` |
+| Port | `21526` |
+| RPC Port | `21527` |
 
-Block Spacing: 120 Seconds
-Stake Minimum Age: 10 Hours
+## Social Channels
 
-Port: 21526
-RPC Port: 21527
+| Site | link |
+|:-----------|:-----------|
+| Bitcointalk | https://bitcointalk.org/index.php?topic= |
+| Facebook | https://www.facebook.com/artaxtech/ |
+| Twitter | http://twitter.com/artaxtech |
+| Telegram | http://t.me/artax |
+| Discord | https://discord.gg/btMYs43 |
+
 
 
 BUILD LINUX
@@ -74,23 +92,3 @@ BUILD WINDOWS
 For more information please visit the website:
 
 https://artax.one
-
-## Coin Specifications
-
-| Specification | Value |
-|:-----------|:-----------|
-| Block Spacing | `120 seconds` |
-| Stake Minimum Age | `10 hours` |
-| Stake Reward | `20% PoS / 180% Masternode per annum` |
-| Port | `21526` |
-| RPC Port | `21527` |
-
-## Social Channels
-
-| Site | link |
-|:-----------|:-----------|
-| Bitcointalk | https://bitcointalk.org/ |
-| Facebook | https://www.facebook.com/artaxtech/ |
-| Twitter | http://twitter.com/artaxtech |
-| Telegram | Soon |
-| Discord | https://discord.gg/ |
