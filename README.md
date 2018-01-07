@@ -5,7 +5,7 @@
                 \____|____/____|___/ |____|\____|____/___/\__\
                                      
 
-Artax is a Powerful Node-based PoW + PoS-based cryptocurrency.
+Artax is a Powerful Node-Based PoW + PoS-based cryptocurrency.
 
 ## Artax Specifications
 
@@ -87,6 +87,9 @@ BUILD WINDOWS
 
 14) Type "mingw32-make" and hit enter to start building. When it's finished you can find your .exe in the release folder
 
+
+Masternode Setup guide here:
+https://artax.one/dl/Artax-Masternode-Setup.pdf
 
 
 For more information please visit the website:
