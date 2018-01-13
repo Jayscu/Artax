@@ -13,6 +13,7 @@ Artax is a Powerful Node-Based PoW + PoS-based cryptocurrency.
 |:-----------|:-----------|
 | Block Spacing | `65 seconds` |
 | Stake Minimum Age | `10 hours` |
+| Masternode Minimum Age | `24 hours` |
 | Stake Reward | `20% PoS / 180% Masternode per annum` |
 | Port | `21526` |
 | RPC Port | `21527` |
@@ -21,11 +22,12 @@ Artax is a Powerful Node-Based PoW + PoS-based cryptocurrency.
 
 | Site | link |
 |:-----------|:-----------|
-| Bitcointalk | https://bitcointalk.org/index.php?topic= |
+| Bitcointalk | https://bitcointalk.org/index.php?topic=2702901 |
 | Facebook | https://www.facebook.com/artaxtech/ |
 | Twitter | http://twitter.com/artaxtech |
 | Telegram | http://t.me/artax |
 | Discord | https://discord.gg/btMYs43 |
+| Website | http://www.artax.one |
 
 
 
@@ -89,9 +91,10 @@ BUILD WINDOWS
 
 
 Masternode Setup guide here:
-https://artax.one/dl/Artax-Masternode-Setup.pdf
+Linux - http://artax.one/dl/AM.pdf
+Windows - http://artax.one/dl/WAM.pdf
 
 
 For more information please visit the website:
 
-https://artax.one
+http://artax.one
