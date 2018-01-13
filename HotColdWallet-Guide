@@ -1,5 +1,5 @@
 HOT/COLD Masternode Setup
-Compiling Control Wallet Artax Masternode Coin -- Ubuntu 14.04 Reuired For linux.
+Compiling Control Wallet Artax Masternode Coin -- Ubuntu 14.04 Required For linux.
 Not compatible with Ubuntu 16.04
 
 
@@ -88,6 +88,7 @@ rpcuser=yourusername
 rpcpassword=yourpassword
 rpcallowip=127.0.0.1
 daemon=1
+staking=0
 server=1
 listen=1
 masternodeaddr=x.x.x.x:21117
@@ -100,13 +101,13 @@ masternodeprivkey=privatekey
 cd ~/Artax/src
 
 To run Control Wallet do this 
-./Artaxd
+./artaxd
 
 You should see server starting
 
 To check the status of your masternode, 
 
-./Artaxd getinfo 
+./artaxd getinfo 
 
 
 Once the block number is the same as that you can see in the help-debug window-information of your synced local wallet, or on the block explorer, it means your vps wallet is synced.
