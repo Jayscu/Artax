@@ -91,7 +91,7 @@ daemon=1
 staking=0
 server=1
 listen=1
-masternodeaddr=x.x.x.x:21117
+masternodeaddr=x.x.x.x:21257
 masternode=1
 masternodeprivkey=privatekey
 
